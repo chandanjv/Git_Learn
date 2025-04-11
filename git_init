@@ -1,0 +1,18 @@
+git init is a Git command used to create a new Git repository in your current directory.
+
+Here’s what happens when you run git init:
+	•	It creates a hidden .git folder in the directory.
+	•	This .git folder stores all the metadata, configuration, and history for version control.
+	•	It tells Git to start tracking changes in the files of that directory.
+
+Use case:
+
+You’re starting a new project and want to use Git to track its history:
+
+mkdir my-project
+cd my-project
+git init
+
+Now my-project is a Git repository, and you can start adding files, staging changes, and making commits.
+
+Let me know if you want a visual or want to practice the flow!
