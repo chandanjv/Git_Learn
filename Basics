@@ -1,0 +1,67 @@
+#In your terminal:
+mkdir my-project
+cd my-project
+git init
+
+Nice! After git init, your directory is now a Git repo — but it’s empty. So here’s the typical next steps:
+
+⸻
+
+✅ 1. Add a file to track
+
+Let’s say you create a simple file:
+
+echo "# My Project" > README.md
+
+
+
+III - Create an empty repo on GitHub
+
+        •       Go to GitHub
+        •       Click “New” repository
+        •       Name it (e.g., my-first-repo)
+        •       Do not check “Initialize with a README”
+        •       Click Create Repository
+
+Connect to a remote repo
+
+If you’re pushing this to GitHub:
+
+git remote add origin https://github.com/your-username/your-repo.git
+
+
+⸻
+
+✅ 2. Stage the file
+
+Tell Git that you want to track this file:
+
+git add README.md
+
+This adds it to the staging area, which is like a prep zone before committing.
+
+⸻
+
+✅ 3. Commit the change
+
+Create your first commit — a snapshot of your project:
+
+git commit -m "Initial commit"
+
+
+
+⸻
+
+✅ 4. PUSH this to GitHub
+
+If you’re pushing this to GitHub:
+
+git push -u origin main
+
+#See if you have any untracked files
+
+git status
+
+This will show:
+	•	if there are any untracked files (files Git knows about but hasn’t added),
+	•	or if everything is already committed (which is probably the case here).
